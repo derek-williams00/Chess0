@@ -3,12 +3,15 @@ class Piece:
     white_char = 'x'
     char = 'x'
     move_patterns = ()
-    location = []
     captured = False
 
-    def __init__(self, color, location):
-        self.white_color = color
-        self.location = location
+    def __init__(self, color):
+        if color == 'white':
+            self.white_color = True
+        elif color == 'black':
+            self.white_color = False
+        else:
+            print('Error: A piece was created and its color was not defined correctly')
         if self.white_color:
             self.char = self.white_char
         elif not self.white_color:
@@ -16,7 +19,8 @@ class Piece:
 
 
 class MovePattern:
-    pass
+    def __init__(self, map):
+        pass
 
 
 class King(Piece):
