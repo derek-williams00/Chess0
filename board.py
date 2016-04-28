@@ -24,22 +24,22 @@ class Board:
                    Bishop('white'): (7, 5),
                    Knight('white'): (7, 6),
                    Rook('white'): (7, 7),
-                   Pawn('black'): (0, 0),
-                   Pawn('black'): (0, 1),
-                   Pawn('black'): (0, 2),
-                   Pawn('black'): (0, 3),
-                   Pawn('black'): (0, 4),
-                   Pawn('black'): (0, 5),
-                   Pawn('black'): (0, 6),
-                   Pawn('black'): (0, 7),
-                   Rook('black'): (1, 0),
-                   Knight('black'): (1, 1),
-                   Bishop('black'): (1, 2),
-                   Queen('black'): (1, 3),
-                   King('black'): (1, 4),
-                   Bishop('black'): (1, 5),
-                   Knight('black'): (1, 6),
-                   Rook('black'): (1, 7),
+                   Pawn('black'): (1, 0),
+                   Pawn('black'): (1, 1),
+                   Pawn('black'): (1, 2),
+                   Pawn('black'): (1, 3),
+                   Pawn('black'): (1, 4),
+                   Pawn('black'): (1, 5),
+                   Pawn('black'): (1, 6),
+                   Pawn('black'): (1, 7),
+                   Rook('black'): (0, 0),
+                   Knight('black'): (0, 1),
+                   Bishop('black'): (0, 2),
+                   Queen('black'): (0, 3),
+                   King('black'): (0, 4),
+                   Bishop('black'): (0, 5),
+                   Knight('black'): (0, 6),
+                   Rook('black'): (0, 7),
                    }
 
     def __init__(self):
@@ -48,14 +48,14 @@ class Board:
             self.board[piece] = self.start_board[piece]
 
     def board_array(self):
-        board = [[None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None],
-                 [None, None, None, None, None, None, None, None]]
+        board = [[0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0, 0, 0, 0]]
         for piece in self.board:
             board[self.board[piece][0]][self.board[piece][1]] = piece
         return board

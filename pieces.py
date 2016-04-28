@@ -1,3 +1,6 @@
+import movepattern
+
+
 class Piece:
     black_char = 'x'
     white_char = 'x'
@@ -16,11 +19,6 @@ class Piece:
             self.char = self.white_char
         elif not self.white_color:
             self.char = self.white_char
-
-
-class MovePattern:
-    def __init__(self, map):
-        pass
 
 
 class King(Piece):
